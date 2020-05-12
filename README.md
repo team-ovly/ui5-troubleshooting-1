@@ -30,3 +30,16 @@ Veja a página [Supported Combinations of Themes and Libraries](https://ui5.sap.
 Ao selecionar o RadioButton, o tema deve ser aplicado.
 
 A aplicação deveria ser carregada com o tema "sap_belize" por padrão.
+
+
+## Ex 5
+
+Rodar a app na versão 1.71.19
+
+A app usa uma abordagem mais parecida com MVC.
+Tela não carrega. A tela deveria conter:
+
+- 1 label
+- 1 Input desabilitado com a informação do idioma sendo usado
+
+A tela deve ser definida no arquivo `tela.view.js` e a mesma deve ser posta na tela através do arquivo `logica.js`
