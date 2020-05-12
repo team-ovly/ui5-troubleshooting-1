@@ -1,0 +1,17 @@
+<script id="sap-ui-bootstrap" 
+     type="text/javascript"
+     src="www.ui5.com/resources/sap-ui-core.js"
+     data-sap-ui-theme="sap_belize"
+     data-sap-ui-libs="sap.m"
+     data-sap-ui-compatVersion="edge">
+</script>
+
+<script>
+	try{
+		sap.ui.getCore().attachInit(function(){
+			alert("UI5 carregado com sucesso!");
+		})
+	} catch(oError){
+		alert(oError);
+	}
+</script>
