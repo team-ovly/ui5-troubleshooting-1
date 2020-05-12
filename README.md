@@ -8,7 +8,7 @@ O UI5 não é carregado na página com sucesso. Deveria carregar a versão mais 
 
 ## Ex 2
 
-O UI5 não é carregado na página com sucesso. Deve carregar a versão 1.71.15 usando o CDN disponível no SAP Cloud Platform através do arquivo neo-app.json
+O UI5 não é carregado na página com sucesso. Deveria carregar a versão 1.71.15 usando o CDN disponível no SAP Cloud Platform através de uma rota no arquivo neo-app.json
 
 ## Ex 3
 
@@ -36,10 +36,59 @@ A aplicação deveria ser carregada com o tema "sap_belize" por padrão.
 
 Rodar a app na versão 1.71.19
 
-A app usa uma abordagem mais parecida com MVC.
-Tela não carrega. A tela deveria conter:
+A app não usa containers HTML e sim uma visão. A visão é feita em JavaScript (o que não é a abordagem mais comum) para tornar o processo semelhante aos exercícios anteriores.
+A tela não carrega. A tela deveria conter:
 
 - 1 label
 - 1 Input desabilitado com a informação do idioma sendo usado
 
-A tela deve ser definida no arquivo `tela.view.js` e a mesma deve ser posta na tela através do arquivo `logica.js`
+A tela deve ser definida no arquivo `tela.view.js` e a mesma deve ser exibida através do arquivo `logica.js`
+
+O label deve ser exibido acima do input.
+
+## Ex 6
+
+Rodar a app na versão 1.71.19
+
+A app usa uma abordagem mais parecida com MVC. A tela é feita em XML, formato mais utilizado atualmente.
+
+A tela deveria conter:
+
+- 1 label
+- 1 Input desabilitado (não é necessário preencher com o idioma)
+- 1 Checkbox
+- 1 Botão com a capacidade de escanear código de barras (mas nada deve acontecer ao escaner um)
+
+Os controles devem ser organizados **verticalmente**.
+
+A tela deve ser definida no arquivo `tela.view.xml` e a mesma deve ser exibida através do arquivo `logica.js`
+
+**Não é necessário** tratar os eventos dos controles ou preencher as propriedades de forma dinâmica (via JS).
+
+
+## Ex 7
+
+Rodar a app na versão 1.71.19
+
+A app usa uma abordagem mais parecida com MVC. A tela é feita em XML, formato mais utilizado atualmente.
+A lógica JS foi inserida em uma Controller.
+
+A tela deveria conter:
+
+- 1 label
+- 1 Input desabilitado
+- 1 Checkbox
+- 1 Botão com a capacidade de escanear código de barras
+
+Os controles devem ser organizados **verticalmente**.
+
+**É necessário**:
+- preencher o input com o idioma
+- aplicar RTL ao selecionar o checkbox
+- exibir um `alert` com o código de barras ao ser escaneado
+
+A tela deve ser definida no arquivo `tela.view.xml` e toda lógica do tratamento da tela no arquivo `logica.js`
+
+Rodar a app na versão 1.71.19
+
+

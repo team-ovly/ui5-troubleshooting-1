@@ -1,0 +1,10 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="ovly.logica">
+	<FlexBox direction="Column">
+		<items>
+			<Label text="Idioma" />
+			<Input id="input_idioma" enabled="false" value="" />
+			<CheckBox text="RTL" select="setRtl" />
+			<BarcodeScannerButton press="scan" />
+		</items>
+	</FlexBox>
+</mvc:View>
