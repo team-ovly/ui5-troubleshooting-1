@@ -1,0 +1,64 @@
+<mvc:View 
+	displayBlock="true"
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns="sap.m" 
+	xmlns:f="sap.ui.layout.form"  
+	height="100%"
+	>
+	<App>
+		<pages>
+			<Page title="Cadastro de Livro">
+				<content>
+					<f:SimpleForm 
+						editable="true"
+						layout="ResponsiveGridLayout"
+						labelSpanXL="3"
+						labelSpanL="3"
+						labelSpanM="3"
+						labelSpanS="12"
+						adjustLabelSpan="false"
+						emptySpanXL="4"
+						emptySpanL="1"
+						emptySpanM="1"
+						emptySpanS="0"
+						columnsXL="1"
+						columnsL="2"
+						columnsM="2"
+						singleContainerFullSize="false" >
+						<f:content>
+							<core:Title xmlns:core="sap.ui.core" text="Dados Básicos" />
+							<Label text="Nome" />
+							<Input placeholder="ex: O pequeno príncipe" />
+							<Label text="Autor" />
+							<Input value=""></Input>
+							<Label text="Sinopse"/>
+							<TextArea value="" cols="5"  />
+							<core:Title xmlns:core="sap.ui.core" text="Dados adicionais" />
+							<Label text="Avaliação" />
+							<RatingIndicator />
+							<Label text="Disponível" />
+							<Switch customTextOn="Sim" customTextOff="Não" />
+							<Label text="Categoria" />
+							<Select >
+								<items >
+									<Item xmlns="sap.ui.core" key="1" text="Infantil" />
+									<Item xmlns="sap.ui.core" key="2" text="Ficção" />
+									<Item xmlns="sap.ui.core" key="3" text="Biografia" />
+								</items>
+							</Select>
+							<Label text="Lançado em" />
+							<DatePicker />
+						</f:content>
+					</f:SimpleForm>
+				</content>
+				<Footer>
+					<Bar>
+						<right>
+							<Button text="Salvar" type="Emphasized" />
+						</right>
+					</Bar>
+				</Footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

@@ -89,6 +89,25 @@ Os controles devem ser organizados **verticalmente**.
 
 A tela deve ser definida no arquivo `tela.view.xml` e toda lógica do tratamento da tela no arquivo `logica.js`
 
+
+## Ex 8
+
 Rodar a app na versão 1.71.19
 
+A tela está quebrada. Ajuste os pontos falhos de código para que a tela fique conforme a image abaixo:
 
+Não é necessário implementar o controller.
+
+![To be]("./ex8/ex8_to_be.jpg" "To be")
+
+## Ex 9
+
+Rodar a app na versão 1.71.19
+
+Fazer exercício 8 antes.
+A visão é carregada em [modo assíncrono](https://ui5.sap.com/1.71.19/#/topic/68d0e58857a647d49470d9f92dd859bd).
+O botão `Salvar` deve ser exibido no rodapé mas a tela não está carregando depois da alteração.
+
+## Ex 10
+Rodar a app na versão 1.71.19
+Substituindo o arquivo `index` por um Launchpad simples

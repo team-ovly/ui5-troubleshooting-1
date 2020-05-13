@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Exercício 9</title>
+	
+		<script id="sap-ui-bootstrap"
+				src="resources/sap-ui-core.js"
+				data-sap-ui-theme="sap_fiori_3"
+				data-sap-ui-resourceroots='{
+					"ovly": "./src"
+				}'
+				data-sap-ui-compatVersion="edge" 
+				data-sap-ui-async="true">
+		</script>
+		
+		<script>
+			sap.ui.getCore().attachInit(function(){
+				
+				sap.ui.require(
+					[
+						"sap/ui/core/mvc/View",
+						"sap/ui/core/library"
+					], 
+					function(View, coreLibrary){
+						View.create({
+						    viewName: "ovly.tela",
+						    // controller: "ovly.logica",
+						    type: coreLibrary.mvc.ViewType.XML
+						}).then(function(oView) {
+						    oView.placeAt("root");
+						});
+					}
+				);
+			})
+		</script>
+		
+	</head>
+	
+	<body class="sapUiBody" id="root" role="application">
+	</body>
+</html>

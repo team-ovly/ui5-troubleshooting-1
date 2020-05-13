@@ -1,0 +1,44 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="ovly.logica">
+	<f:SimpleForm 
+		editable="true"
+		layout="ResponsiveGridLayout"
+		title="Cadastro de Livro"
+		labelSpanXL="3"
+		labelSpanL="3"
+		labelSpanM="3"
+		labelSpanS="12"
+		adjustLabelSpan="false"
+		emptySpanXL="4"
+		emptySpanL="4"
+		emptySpanM="4"
+		emptySpanS="0"
+		columnsXL="1"
+		columnsL="1"
+		columnsM="1"
+		singleContainerFullSize="false" >
+		<f:content>
+			<Label text="Nome" />
+			<Input placeholder="ex: O pequeno príncipe" />
+			<Label text="Autor" />
+			<Input value=""></Input>
+			<Label text="Sinopse"/>
+			<TextArea value="" cols="5"  />
+			<Label text="Avaliação" />
+			<RatingIndicator />
+			<Label text="Disponível" />
+			<Switch customTextOn="Sim" customTextOn="Não" />
+			<Label text="Categoria" />
+			<Select >
+				<items>
+					<Item key="1" text="Infantil" />
+					<Item key="2" text="Ficção" />
+					<Item key="3" text="Biografia" />
+				</items>
+			</Select>
+			<Label text="Lançado em" />
+			<DatePicker />
+			<Label />
+			<Button text="Salvar" type="Emphasized" />
+		</f:content>
+	</f:SimpleForm>
+</mvc:View>

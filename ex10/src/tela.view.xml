@@ -1,0 +1,30 @@
+<mvc:View 
+	displayBlock="true"
+	height="100%"
+	controllerName="ovly.logica"
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns="sap.f" 
+	>
+	<App>
+		<pages>
+			<Page title="Troubleshooting - Semana 1" class="sapUiResponsiveContentPadding">
+				<content>
+					<GenericTile header="Bootstraping com CDN" subheader="Exercício 1" class="sapUiSmallMargin" press="ex1" />
+					<GenericTile header="Bootstraping com neo-app.json" subheader="Exercício 2" class="sapUiSmallMargin" press="ex2" />
+					<GenericTile header="Controles com JS" subheader="Exercício 3" class="sapUiSmallMargin" press="ex3 />
+					<!--
+						Completar
+					-->
+				</content>
+				<footer>
+					<Toolbar>
+						<content>
+							<ToolbarSpacerr />
+							<Button text="GitHub" type="Emphasized" press="onOpenGitHub" />
+						</content>
+					</Toolbar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
