@@ -1,6 +1,19 @@
 # ui5-troubleshooting-1
 Troubleshooting UI5 apps
 
+## Instruções
+1. Fazer um `fork` deste repositório
+2. Importar na WebIDE realizando um `git clone` do fork (e não deste repositório)
+3. Abrir aplicação usando o arquivo `index.html` localizado na raiz do projeto
+4. Cada exercício possui seu próprio sub diretório no projeto
+5. Corrigir as aplicações em ordem
+6. A cada aplicação corrigida, realize um `commit` e um `push` no repositório
+7. Não é necessário criar novos arquivos ou renomeá-los para corrigir os problemas
+8. Em caso de dúvidas em um dos exercícios, crie uma nova [issue no GitHub](https://github.com/team-ovly/ui5-troubleshooting-1/issues)
+9. 
+## Dicas
+1. Não é necessário implementar mais do que é solicitado em cada exercício
+2. Erros podem ser de qualquer espécie: digitação, conceito, lógica, etc
 
 ## Ex 1
 
@@ -22,6 +35,7 @@ Tela não carrega. A tela deveria conter:
 ## Ex 4
 
 Fazer exercício 3 antes.
+
 Rodar app na versão 1.69.x
 
 Aplicação precisa ser alterada para que apareça um "RadioButton" para cada tema suportado por esta versão.
@@ -94,11 +108,7 @@ A tela deve ser definida no arquivo `tela.view.xml` e toda lógica do tratamento
 
 Rodar a app na versão 1.71.19
 
-A tela está quebrada. Ajuste os pontos falhos de código para que a tela fique conforme a image abaixo:
-
-Não é necessário implementar o controller.
-
-![To be]("./ex8/ex8_to_be.jpg" "To be")
+A tela está quebrada. Ajuste os pontos falhos de código para que a tela fique conforme a imagem localizada na pasta do exercício.
 
 ## Ex 9
 
@@ -110,4 +120,13 @@ O botão `Salvar` deve ser exibido no rodapé mas a tela não está carregando d
 
 ## Ex 10
 Rodar a app na versão 1.71.19
-Substituindo o arquivo `index` por um Launchpad simples
+
+Crie um menu mais elegante que o provido no arquivo `index.html` localizado na raiz. Crie um mini "launchpad" com um tile abrindo cada uma das aplicações (já corrigidas) em uma nova aba
+
+## Atualizar portfólio
+
+1. Faça `commit`e `push` de todas correções
+2. Faça o deploy da app no SAP Cloud
+3. Crie um tile no Fiori Launchpad usado como portfólio no serviço Portal do SAP Cloud
+4. Coloque o tile em um grupo chamado "Semana 1"
+5. Coloque o tile em um catálogo chamado "Troubleshooting"
